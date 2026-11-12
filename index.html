@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>tom dorleans — portfolio BTS SIO SLAM</title>
+  <meta name="description" content="Portfolio de Tom Dorleans, étudiant en 2e année de BTS SIO option SLAM : compétences, stage CQFD19, projets GsbParam, Java POO, Linux et veille technologique sur le Green Code.">
+  <meta name="author" content="Tom Dorleans">
+  <meta name="theme-color" content="#8ACE00">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%238ACE00'/%3E%3Ctext x='4' y='23' font-family='Arial Narrow,Arial' font-weight='700' font-size='18'%3Etd%3C/text%3E%3C/svg%3E">
+
+  <!-- Polices : 3 familles, poids limités, display=swap (sobriété) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;700&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<!-- ============ EN-TÊTE / NAVIGATION ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#accueil" class="brand" aria-label="Retour à l'accueil">tom dorleans</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+      <span class="nav-toggle-label">menu</span>
+    </button>
+    <nav id="nav-menu" class="nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="#profil" data-nav>01 profil</a></li>
+        <li><a href="#competences" data-nav>02 compétences</a></li>
+        <li><a href="#experience" data-nav>03 stage</a></li>
+        <li><a href="#projets" data-nav>04 projets</a></li>
+        <li><a href="#synthese" data-nav>05 synthèse</a></li>
+        <li><a href="#veille" data-nav>06 veille</a></li>
+        <li><a href="#contact" data-nav class="nav-cta">contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section id="accueil" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-main">
+        <p class="label">portfolio — épreuves E4 / E5 — BTS SIO</p>
+        <h1 class="hero-title">tom<br>dorleans</h1>
+        <p class="hero-sub">développeur d'applications · option SLAM</p>
+        <p class="hero-pitch">
+          Étudiant en 2<sup>e</sup> année de BTS SIO option SLAM, je conçois des applications web et métiers
+          <strong>sobres, sécurisées et maintenables</strong> — de la modélisation de la base de données
+          jusqu'à la mise en production.
+        </p>
+        <div class="hero-actions">
+          <a href="#projets" class="btn btn-dark">voir les projets →</a>
+          <a href="#veille" class="btn">lire la veille green code</a>
+        </div>
+      </div>
+
+      <aside class="id-card" aria-label="Fiche d'identité">
+        <div class="id-card-head">
+          <span>fiche n° SIO-SLAM-02</span>
+          <span class="dot" aria-hidden="true"></span>
+        </div>
+        <dl class="id-list">
+          <div><dt>nom</dt><dd>Tom Dorleans</dd></div>
+          <div><dt>formation</dt><dd>BTS Services Informatiques aux Organisations</dd></div>
+          <div><dt>option</dt><dd>SLAM — Solutions Logicielles et Applications Métiers</dd></div>
+          <div><dt>niveau</dt><dd>2<sup>e</sup> année</dd></div>
+          <div><dt>stage</dt><dd>CQFD19 — Tulle (19)</dd></div>
+          <div><dt>veille</dt><dd>Éco-conception · Green Code · GreenOps</dd></div>
+        </dl>
+        <div class="terminal" aria-label="Exemple de terminal">
+          <p><span class="prompt">tom@lubuntu:~$</span> whoami</p>
+          <p class="out">dev_slam --php --java --sql</p>
+          <p><span class="prompt">tom@lubuntu:~$</span> git status</p>
+          <p class="out">On branch main — portfolio à jour<span class="cursor" aria-hidden="true">_</span></p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>php mvc</span><span>pdo</span><span>java poo</span><span>mysql / mariadb</span><span>jmerise</span><span>git</span><span>linux cli</span><span>csrf</span><span>green code</span><span>html5</span><span>css3</span>
+        <span>php mvc</span><span>pdo</span><span>java poo</span><span>mysql / mariadb</span><span>jmerise</span><span>git</span><span>linux cli</span><span>csrf</span><span>green code</span><span>html5</span><span>css3</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 01 PROFIL ============ -->
+  <section id="profil" class="section">
+    <div class="container">
+      <header class="section-head">
+        <span class="section-num">01</span>
+        <h2>profil</h2>
+        <span class="section-tag">qui je suis</span>
+      </header>
+
+      <div class="grid-2-1">
+        <article class="panel panel-paper reading">
+          <h3>Du code qui sert un vrai besoin</h3>
+          <p>
+            Mon parcours en BTS SIO m'a permis de passer de la théorie à la production : j'ai livré un
+            <strong>site professionnel réel</strong> pour une entreprise du BTP, fait évoluer une
+            <strong>application PHP en architecture MVC</strong> dans le contexte GSB et administré des postes sous
+            <strong>Linux</strong> en ligne de commande.
+          </p>
+          <p>
+            J'aime comprendre comment les choses fonctionnent « sous le capot ». C'est pour cette raison que je
+            privilégie le code natif, les requêtes SQL maîtrisées et les architectures légères plutôt que
+            l'empilement de dépendances. Ce choix rejoint directement ma veille technologique sur
+            l'éco-conception logicielle.
+          </p>
+          <p>
+            Mon fil conducteur : un code <strong>lisible</strong>, <strong>sécurisé dès la conception</strong>
+            (requêtes préparées, jetons CSRF) et <strong>le moins gourmand possible</strong> en ressources.
+          </p>
+        </article>
+
+        <aside class="panel panel-dark stack-list">
+          <p class="label label-invert">ce que j'apporte</p>
+          <ol>
+            <li><span>01</span> Analyse du besoin et modélisation (MCD / MLD)</li>
+            <li><span>02</span> Développement web PHP MVC sécurisé</li>
+            <li><span>03</span> Programmation orientée objet en Java</li>
+            <li><span>04</span> Déploiement et mise en production</li>
+            <li><span>05</span> Administration système Linux &amp; Windows</li>
+          </ol>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 02 COMPÉTENCES ============ -->
+  <section id="competences" class="section section-alt">
+    <div class="container">
+      <header class="section-head">
+        <span class="section-num">02</span>
+        <h2>compétences</h2>
+        <span class="section-tag">stack technique</span>
+      </header>
+
+      <div class="skills-grid">
+        <article class="card skill-card">
+          <p class="card-index">SK-01</p>
+          <h3>Langages &amp; développement</h3>
+          <ul class="tags">
+            <li>PHP</li><li>MVC</li><li>PDO</li><li>Java</li><li>POO</li><li>HTML5</li><li>CSS3</li><li>SQL</li>
+          </ul>
+          <p>Applications web structurées en MVC (contrôleurs, modèles, vues) et applications orientées objet en Java : classes, héritage, collections.</p>
+        </article>
+
+        <article class="card skill-card">
+          <p class="card-index">SK-02</p>
+          <h3>Bases de données</h3>
+          <ul class="tags">
+            <li>MySQL</li><li>MariaDB</li><li>JMerise</li><li>MCD</li><li>MLD</li><li>phpMyAdmin</li>
+          </ul>
+          <p>Modélisation conceptuelle et logique avec JMerise, création des schémas, écriture de requêtes (jointures, agrégats) et administration via phpMyAdmin.</p>
+        </article>
+
+        <article class="card skill-card">
+          <p class="card-index">SK-03</p>
+          <h3>Outils &amp; environnements</h3>
+          <ul class="tags">
+            <li>Git</li><li>GitHub</li><li>Linux CLI</li><li>Lubuntu</li><li>VS Code</li><li>Eclipse</li><li>WampServer</li>
+          </ul>
+          <p>Versionnement Git en ligne de commande, environnement local WampServer, IDE VS Code et Eclipse, administration Linux en terminal.</p>
+        </article>
+
+        <article class="card skill-card card-accent">
+          <p class="card-index">SK-04</p>
+          <h3>Cybersécurité &amp; bonnes pratiques</h3>
+          <ul class="tags">
+            <li>CSRF</li><li>Requêtes préparées</li><li>Validation serveur</li><li>Échappement</li>
+          </ul>
+          <p>Sécurisation des formulaires PHP : jetons anti-CSRF, requêtes préparées PDO contre l'injection SQL, contrôle et échappement des saisies.</p>
+        </article>
+      </div>
+
+      <div class="code-block" role="region" aria-label="Exemple de commandes Git">
+        <div class="code-head"><span>terminal — workflow git</span><span>bash</span></div>
+<pre><code><span class="c"># Workflow quotidien en ligne de commande</span>
+git checkout -b feature/rapports-visite
+git add . &amp;&amp; git commit -m "feat: ajout du modèle RapportVisite (PDO)"
+git push origin feature/rapports-visite</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 EXPÉRIENCE ============ -->
+  <section id="experience" class="section">
+    <div class="container">
+      <header class="section-head">
+        <span class="section-num">03</span>
+        <h2>stage — cqfd19</h2>
+        <span class="section-tag">expérience pro</span>
+      </header>
+
+      <div class="company-banner">
+        <div>
+          <p class="label">entreprise d'accueil</p>
+          <p class="company-name">CQFD19</p>
+        </div>
+        <dl class="company-meta">
+          <div><dt>secteur</dt><dd>BTP &amp; multiservices</dd></div>
+          <div><dt>lieu</dt><dd>Tulle, Corrèze</dd></div>
+          <div><dt>rôle</dt><dd>Développeur web &amp; technicien</dd></div>
+        </dl>
+      </div>
+
+      <article class="panel panel-paper reading intro-stage">
+        <p>
+          CQFD19 est une entreprise de BTP et de multiservices implantée à Tulle, en Corrèze. Durant mon stage,
+          j'ai occupé une double casquette : <strong>développeur</strong>, en menant de bout en bout la création du
+          site vitrine de l'entreprise, et <strong>technicien</strong>, en fiabilisant son parc informatique
+          (sauvegardes, postes de travail, vidéosurveillance). Cette expérience m'a appris à transformer le besoin
+          d'un client non technicien en une solution concrète, livrée et maintenable.
+        </p>
+      </article>
+
+      <div class="missions">
+        <!-- Mission web -->
+        <article class="card mission mission-main">
+          <div class="mission-head">
+            <p class="card-index">MIS-01 · web</p>
+            <ul class="tags tags-sm"><li>PHP</li><li>HTML5</li><li>CSS3</li><li>cPanel</li><li>o2switch</li></ul>
+          </div>
+          <h3>Site vitrine multi-pages responsive</h3>
+          <p class="mission-lead">
+            <strong>Besoin :</strong> présenter les services et les chantiers réalisés par l'entreprise, et permettre aux
+            prospects de la contacter simplement depuis un ordinateur ou un smartphone.
+          </p>
+          <ol class="steps">
+            <li><span>analyse</span>Recueil du besoin, définition de l'arborescence et des contenus (services, chantiers, contact).</li>
+            <li><span>conception</span>Maquettage des pages et choix d'une approche responsive mobile-first.</li>
+            <li><span>développement</span>Développement <span lang="en">from scratch</span> en PHP / HTML5 / CSS3, avec des gabarits PHP réutilisables (en-tête, pied de page) pour faciliter la maintenance.</li>
+            <li><span>formulaire</span>Formulaire de contact avec contrôle des champs côté serveur.</li>
+            <li><span>production</span>Mise en ligne chez l'hébergeur o2switch via cPanel : transfert des fichiers, configuration du domaine et tests en conditions réelles.</li>
+          </ol>
+          <p class="result"><span>résultat</span> Un site professionnel en ligne, rapide et lisible sur tous les écrans.</p>
+          <a class="btn btn-small" href="https://cqfd19.fr" target="_blank" rel="noopener" style="margin-top:1rem">voir le site en ligne ↗</a>
+        </article>
+
+        <!-- Missions système -->
+        <article class="card mission">
+          <p class="card-index">MIS-02 · système</p>
+          <h3>Sauvegardes automatisées</h3>
+          <p>Mise en place de sauvegardes planifiées avec <strong>Cobian Backup</strong> : une copie locale et une copie distante synchronisée sur <strong>Google Drive</strong>, pour protéger les données de l'entreprise en cas de panne ou de sinistre.</p>
+          <ul class="tags tags-sm"><li>Cobian Backup</li><li>Google Drive</li><li>PRA</li></ul>
+        </article>
+
+        <article class="card mission">
+          <p class="card-index">MIS-03 · poste de travail</p>
+          <h3>Optimisation des postes bureautiques</h3>
+          <p>Remise en forme des postes de travail : mises à jour, allègement des programmes au démarrage et suppression des logiciels inutiles, pour gagner en rapidité et en stabilité au quotidien.</p>
+          <ul class="tags tags-sm"><li>Windows</li><li>Maintenance</li><li>Support</li></ul>
+        </article>
+
+        <article class="card mission">
+          <p class="card-index">MIS-04 · réseau</p>
+          <h3>Vidéosurveillance DVR</h3>
+          <p>Installation et configuration d'un système de vidéosurveillance DVR : raccordement des caméras, paramétrage de l'enregistrement et de la consultation des flux.</p>
+          <ul class="tags tags-sm"><li>DVR</li><li>Caméras</li><li>Réseau</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 PROJETS ============ -->
+  <section id="projets" class="section section-alt">
+    <div class="container">
+      <header class="section-head">
+        <span class="section-num">04</span>
+        <h2>projets</h2>
+        <span class="section-tag">scolaires &amp; perso</span>
+      </header>
+
+      <div class="filters" role="group" aria-label="Filtrer les projets">
+        <button class="filter is-active" data-filter="all" aria-pressed="true">tous</button>
+        <button class="filter" data-filter="web" aria-pressed="false">web / php</button>
+        <button class="filter" data-filter="java" aria-pressed="false">java</button>
+        <button class="filter" data-filter="systeme" aria-pressed="false">système</button>
+      </div>
+
+      <div class="projects">
+        <!-- GsbParam -->
+        <article class="card project project-feature" data-cat="web">
+          <div class="project-label">
+            <span>PRJ-01</span><span>contexte GSB</span><span>PHP · MVC · PDO</span>
+          </div>
+          <div class="project-body">
+            <div class="reading">
+              <h3>GsbParam</h3>
+              <p>
+                Dans le contexte du laboratoire pharmaceutique <strong>Galaxy Swiss Bourdin (GSB)</strong>, GsbParam
+                est une application web en PHP structurée selon le modèle <strong>MVC</strong>. Ma mission : la faire
+                évoluer en ajoutant la <strong>gestion et la saisie des rapports de visite</strong>.
+              </p>
+              <ul class="checklist">
+                <li>Création de <strong>contrôleurs</strong> dédiés pour orchestrer la consultation et l'insertion des rapports.</li>
+                <li>Écriture de <strong>modèles PDO</strong> avec des requêtes préparées : aucune donnée utilisateur n'est concaténée dans le SQL.</li>
+                <li>Sécurisation des formulaires par <strong>jetons CSRF</strong> générés en session et vérifiés à chaque soumission.</li>
+                <li>Respect de la séparation des responsabilités : logique métier, accès aux données et affichage restent indépendants.</li>
+              </ul>
+              <ul class="tags tags-sm"><li>PHP 8</li><li>MVC</li><li>PDO</li><li>MySQL</li><li>CSRF</li><li>Git</li></ul>
+            </div>
+
+            <div class="code-block code-in-card" role="region" aria-label="Extrait de code GsbParam">
+              <div class="code-head"><span>controleurs/c_rapports.php</span><span>php</span></div>
+<pre><code><span class="c">// 1. Génération du jeton CSRF à l'affichage</span>
+<span class="k">if</span> (<span class="f">empty</span>($_SESSION[<span class="s">'csrf'</span>])) {
+    $_SESSION[<span class="s">'csrf'</span>] = <span class="f">bin2hex</span>(<span class="f">random_bytes</span>(<span class="n">32</span>));
+}
+
+<span class="c">// 2. Vérification à la soumission</span>
+<span class="k">if</span> (!<span class="f">hash_equals</span>($_SESSION[<span class="s">'csrf'</span>], $_POST[<span class="s">'csrf'</span>] ?? <span class="s">''</span>)) {
+    <span class="f">http_response_code</span>(<span class="n">403</span>);
+    <span class="k">exit</span>(<span class="s">'Requête invalide'</span>);
+}
+
+<span class="c">// 3. Insertion via requête préparée (modèle PDO)</span>
+$req = $pdo-&gt;<span class="f">prepare</span>(
+  <span class="s">'INSERT INTO rapport (idVisiteur, idPraticien, dateVisite, bilan)
+   VALUES (:vis, :pra, :date, :bilan)'</span>
+);
+$req-&gt;<span class="f">execute</span>([
+  <span class="s">':vis'</span>   =&gt; $idVisiteur,
+  <span class="s">':pra'</span>   =&gt; $idPraticien,
+  <span class="s">':date'</span>  =&gt; $dateVisite,
+  <span class="s">':bilan'</span> =&gt; $bilan,
+]);</code></pre>
+            </div>
+          </div>
+        </article>
+
+        <!-- Java POO -->
+        <article class="card project" data-cat="java">
+          <div class="project-label"><span>PRJ-02</span><span>java</span></div>
+          <h3>Applications Java orientées objet</h3>
+          <p>
+            Développement d'applications en <strong>Java</strong> sous Eclipse, en appliquant les principes de la
+            programmation orientée objet : conception de classes, encapsulation, <strong>héritage</strong>,
+            polymorphisme et manipulation de <strong>collections</strong> pour gérer des ensembles d'objets métier.
+          </p>
+          <div class="code-block code-mini">
+<pre><code><span class="k">public class</span> Visiteur <span class="k">extends</span> Employe {
+  <span class="k">private</span> List&lt;Rapport&gt; rapports = <span class="k">new</span> ArrayList&lt;&gt;();
+}</code></pre>
+          </div>
+          <ul class="tags tags-sm"><li>Java</li><li>POO</li><li>Héritage</li><li>Collections</li><li>Eclipse</li></ul>
+        </article>
+
+        <!-- Lubuntu -->
+        <article class="card project" data-cat="systeme">
+          <div class="project-label"><span>PRJ-03</span><span>linux</span></div>
+          <h3>Seconde vie d'un PC portable sous Lubuntu</h3>
+          <p>
+            Remise en état d'un ordinateur portable ancien devenu trop lent : diagnostic, installation de
+            <strong>Lubuntu</strong> (distribution légère), puis configuration et optimisation <strong>en ligne de
+            commande</strong> (paquets, mises à jour, services). Un projet directement lié à ma veille : prolonger la
+            durée de vie du matériel est l'un des leviers les plus efficaces de sobriété numérique.
+          </p>
+          <div class="code-block code-mini">
+<pre><code>sudo apt update &amp;&amp; sudo apt upgrade -y
+sudo apt autoremove --purge
+systemctl list-unit-files --state=enabled</code></pre>
+          </div>
+          <ul class="tags tags-sm"><li>Lubuntu</li><li>Bash</li><li>APT</li><li>systemd</li></ul>
+        </article>
+
+        <!-- CQFD19 rappel -->
+        <article class="card project project-link" data-cat="web">
+          <div class="project-label"><span>PRJ-04</span><span>stage</span></div>
+          <h3>Site vitrine CQFD19</h3>
+          <p>Projet professionnel réel : site multi-pages responsive en PHP / HTML5 / CSS3, mis en production chez o2switch.</p>
+          <div class="hero-actions" style="margin-top:auto">
+            <a href="#experience" class="btn btn-small">détail de la mission →</a>
+            <a class="btn btn-small" href="https://cqfd19.fr" target="_blank" rel="noopener">voir le site ↗</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 05 SYNTHÈSE E5 ============ -->
+  <section id="synthese" class="section">
+    <div class="container">
+      <header class="section-head">
+        <span class="section-num">05</span>
+        <h2>tableau de synthèse</h2>
+        <span class="section-tag">compétences bloc 1</span>
+      </header>
+
+      <p class="section-intro">
+        Correspondance entre mes réalisations et les six compétences du bloc 1
+        « Support et mise à disposition de services informatiques ».
+      </p>
+
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Tableau de synthèse des compétences">
+        <table class="matrix">
+          <thead>
+            <tr>
+              <th scope="col">réalisation</th>
+              <th scope="col"><span>Gérer le patrimoine informatique</span></th>
+              <th scope="col"><span>Répondre aux incidents et demandes d'évolution</span></th>
+              <th scope="col"><span>Développer la présence en ligne</span></th>
+              <th scope="col"><span>Travailler en mode projet</span></th>
+              <th scope="col"><span>Mettre à disposition un service</span></th>
+              <th scope="col"><span>Organiser son développement pro.</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Site vitrine CQFD19</th><td></td><td></td><td class="on">■</td><td class="on">■</td><td class="on">■</td><td></td></tr>
+            <tr><th scope="row">Sauvegardes Cobian + Drive</th><td class="on">■</td><td class="on">■</td><td></td><td></td><td class="on">■</td><td></td></tr>
+            <tr><th scope="row">Postes &amp; vidéosurveillance DVR</th><td class="on">■</td><td class="on">■</td><td></td><td></td><td class="on">■</td><td></td></tr>
+            <tr><th scope="row">GsbParam (PHP MVC)</th><td></td><td class="on">■</td><td></td><td class="on">■</td><td class="on">■</td><td></td></tr>
+            <tr><th scope="row">Applications Java POO</th><td></td><td></td><td></td><td class="on">■</td><td></td><td class="on">■</td></tr>
+            <tr><th scope="row">PC portable sous Lubuntu</th><td class="on">■</td><td class="on">■</td><td></td><td></td><td></td><td class="on">■</td></tr>
+            <tr><th scope="row">Veille Green Code</th><td></td><td></td><td></td><td></td><td></td><td class="on">■</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Ajoute ici le lien vers ton tableau de synthèse officiel (PDF) :
+           <a class="btn" href="docs/tableau-synthese-e5.pdf" download>télécharger le tableau officiel</a> -->
+    </div>
+  </section>
+
+  <!-- ============ 06 VEILLE ============ -->
+  <section id="veille" class="section section-veille">
+    <div class="container">
+      <header class="section-head">
+        <span class="section-num">06</span>
+        <h2>veille — green code</h2>
+        <span class="section-tag">éco-conception</span>
+      </header>
+
+      <div class="veille-question">
+        <p class="label">problématique</p>
+        <p class="question">Comment réduire, dès la phase de développement, la consommation de ressources (CPU, RAM, bande passante) et l'empreinte carbone des applications web et métiers&nbsp;?</p>
+      </div>
+
+      <!-- Chiffres clés -->
+      <div class="stats">
+        <div class="stat">
+          <p class="stat-value">4,4&nbsp;%</p>
+          <p class="stat-text">de l'empreinte carbone de la France est liée au numérique en 2022, soit 29,5 MtCO2e.</p>
+          <a class="stat-src" href="https://infos.ademe.fr/magazine-janvier-2025/numerique-quel-impact-environnemental-en-2022/" target="_blank" rel="noopener">source : ADEME, 2025</a>
+        </div>
+        <div class="stat">
+          <p class="stat-value">50&nbsp;%</p>
+          <p class="stat-text">de l'impact carbone du numérique vient des terminaux (fabrication et usage), 46&nbsp;% des centres de données.</p>
+          <a class="stat-src" href="https://ecoresponsable.numerique.gouv.fr/actualites/actualisation-ademe-impact/" target="_blank" rel="noopener">source : numérique écoresponsable</a>
+        </div>
+        <div class="stat">
+          <p class="stat-value">78</p>
+          <p class="stat-text">critères dans le Référentiel général de l'écoconception des services numériques (RGESN), publié en mai 2024.</p>
+          <a class="stat-src" href="https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/environnement-rgesn-170524.html" target="_blank" rel="noopener">source : Arcep, 2024</a>
+        </div>
+      </div>
+
+      <div class="grid-2-1">
+        <article class="panel panel-paper reading">
+          <h3>Pourquoi ce sujet&nbsp;?</h3>
+          <p>
+            On associe souvent le numérique à quelque chose d'« immatériel ». Pourtant, chaque requête SQL, chaque
+            script JavaScript et chaque image chargée sollicitent un processeur, de la mémoire, un réseau et un
+            serveur. Multiplié par des milliers d'utilisateurs, un code inefficace a un coût énergétique réel —
+            et il pousse aussi au renouvellement prématuré des équipements, alors que leur fabrication est la
+            principale source d'impact.
+          </p>
+          <p>
+            En tant que futur développeur, je suis directement concerné : c'est au moment où l'on écrit le code que
+            l'on décide de la quantité de ressources qu'une application consommera pendant toute sa durée de vie.
+          </p>
+
+          <h3>Trois notions clés</h3>
+          <dl class="defs">
+            <div><dt>Éco-conception logicielle</dt><dd>Intégrer la réduction des impacts environnementaux dès la conception d'un service : on ne développe que les fonctionnalités utiles, de la façon la plus efficiente possible.</dd></div>
+            <div><dt>Green Code</dt><dd>Les pratiques de programmation qui réduisent la consommation de CPU, de RAM et de bande passante : algorithmes efficaces, requêtes optimisées, pages légères.</dd></div>
+            <div><dt>GreenOps</dt><dd>La démarche qui consiste à mesurer et piloter l'empreinte des applications en production (hébergement, dimensionnement des serveurs, mise en cache, suivi d'indicateurs).</dd></div>
+          </dl>
+
+          <h3>Un cadre légal en France</h3>
+          <p>
+            La <a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000044327272" target="_blank" rel="noopener">loi n° 2021-1485 du 15 novembre 2021 (dite loi REEN)</a>
+            vise à réduire l'empreinte environnementale du numérique. Elle a confié à l'Arcep et à l'Arcom, en lien
+            avec l'ADEME, la rédaction du <a href="https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/" target="_blank" rel="noopener">RGESN</a>,
+            dont les critères couvrent neuf thématiques, de la stratégie au backend en passant par l'hébergement et
+            l'algorithmie.
+          </p>
+        </article>
+
+        <aside class="panel panel-dark">
+          <p class="label label-invert">méthode de veille</p>
+          <ul class="veille-method">
+            <li><span>sources</span>Sites institutionnels : ADEME, Arcep, numérique écoresponsable (gouv.fr).</li>
+            <li><span>référentiels</span>RGESN 2024 et ses fiches pratiques.</li>
+            <li><span>outils</span>Mesure de pages avec EcoIndex et l'onglet Réseau / Lighthouse des DevTools.</li>
+            <li><span>pratique</span>Application des bonnes pratiques dans mes propres projets, dont ce portfolio.</li>
+          </ul>
+        </aside>
+      </div>
+
+      <!-- Leviers -->
+      <h3 class="sub-head">leviers concrets pour le développeur</h3>
+      <div class="levers">
+        <article class="card lever">
+          <p class="card-index">LV-01 · sql</p>
+          <h4>Optimiser les requêtes</h4>
+          <p>Sélectionner uniquement les colonnes utiles, indexer les colonnes filtrées, paginer avec <code>LIMIT</code> et remplacer les requêtes en boucle (problème « N+1 ») par une jointure.</p>
+        </article>
+        <article class="card lever">
+          <p class="card-index">LV-02 · architecture</p>
+          <h4>Rester léger</h4>
+          <p>Choisir des architectures simples (PHP MVC natif, JavaScript vanille) quand un framework lourd n'apporte pas de valeur : moins de code chargé, moins de dépendances à maintenir.</p>
+        </article>
+        <article class="card lever">
+          <p class="card-index">LV-03 · front</p>
+          <h4>Alléger les pages</h4>
+          <p>Compresser et dimensionner les images, charger en différé ce qui n'est pas visible, limiter les polices et les scripts tiers, mettre en cache les ressources statiques.</p>
+        </article>
+        <article class="card lever">
+          <p class="card-index">LV-04 · greenops</p>
+          <h4>Mesurer en continu</h4>
+          <p>Suivre le poids des pages et le nombre de requêtes, dimensionner l'hébergement au juste besoin et supprimer les fonctionnalités inutilisées.</p>
+        </article>
+      </div>
+
+      <!-- Avant / après SQL -->
+      <div class="compare">
+        <div class="code-block">
+          <div class="code-head"><span>avant — gourmand</span><span>sql</span></div>
+<pre><code><span class="c">-- Toutes les colonnes, toutes les lignes</span>
+<span class="k">SELECT</span> * <span class="k">FROM</span> rapport;
+<span class="c">-- puis 1 requête par rapport pour le praticien</span>
+<span class="k">SELECT</span> * <span class="k">FROM</span> praticien <span class="k">WHERE</span> id = ?;</code></pre>
+        </div>
+        <div class="code-block code-good">
+          <div class="code-head"><span>après — sobre</span><span>sql</span></div>
+<pre><code><span class="c">-- Colonnes utiles, 1 seule requête, paginée</span>
+<span class="k">SELECT</span> r.dateVisite, r.bilan, p.nom
+<span class="k">FROM</span> rapport r
+<span class="k">JOIN</span> praticien p <span class="k">ON</span> p.id = r.idPraticien
+<span class="k">WHERE</span> r.idVisiteur = :vis
+<span class="k">ORDER BY</span> r.dateVisite <span class="k">DESC</span>
+<span class="k">LIMIT</span> <span class="n">20</span>;</code></pre>
+        </div>
+      </div>
+
+      <!-- Mise en application -->
+      <article class="panel panel-paper reading applied">
+        <h3>Appliqué à ce portfolio</h3>
+        <div class="applied-grid">
+          <ul class="checklist">
+            <li>HTML, CSS et JavaScript natifs : <strong>aucun framework</strong>, aucune bibliothèque externe.</li>
+            <li><strong>Aucune image bitmap</strong> : l'identité visuelle repose uniquement sur la typographie et le CSS.</li>
+            <li>Polices limitées à quelques graisses, chargées avec <code>display=swap</code>.</li>
+            <li>Animations désactivées si l'utilisateur a choisi de réduire les mouvements.</li>
+          </ul>
+          <div class="weight-meter" aria-live="polite">
+            <p class="label">poids de cette page</p>
+            <p class="weight-value" id="page-weight">—</p>
+            <p class="weight-note" id="page-weight-note">mesuré en direct par le navigateur</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="panel panel-dark conclusion">
+        <p class="label label-invert">mon avis</p>
+        <p>
+          L'éco-conception n'est pas une contrainte supplémentaire : c'est une autre façon de parler de
+          <strong>qualité logicielle</strong>. Un code sobre est aussi plus rapide, plus lisible, plus simple à
+          sécuriser et moins cher à héberger. C'est l'approche que je veux défendre dans mes futurs projets.
+        </p>
+      </article>
+
+      <details class="sources">
+        <summary>sources de la veille</summary>
+        <ul>
+          <li><a href="https://infos.ademe.fr/magazine-janvier-2025/numerique-quel-impact-environnemental-en-2022/" target="_blank" rel="noopener">ADEME — Numérique : quel impact environnemental en 2022 ?</a></li>
+          <li><a href="https://ecoresponsable.numerique.gouv.fr/actualites/actualisation-ademe-impact/" target="_blank" rel="noopener">Numérique écoresponsable — Actualisation des chiffres de l'impact du numérique en France</a></li>
+          <li><a href="https://www.arcep.fr/la-regulation/grands-dossiers-thematiques-transverses/lempreinte-environnementale-du-numerique.html" target="_blank" rel="noopener">Arcep — L'empreinte environnementale du numérique</a></li>
+          <li><a href="https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/environnement-rgesn-170524.html" target="_blank" rel="noopener">Arcep — Publication du RGESN (17 mai 2024)</a></li>
+          <li><a href="https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/" target="_blank" rel="noopener">RGESN 2024 — référentiel et outils d'évaluation</a></li>
+          <li><a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000044327272" target="_blank" rel="noopener">Légifrance — Loi n° 2021-1485 du 15 novembre 2021 (REEN)</a></li>
+        </ul>
+      </details>
+    </div>
+  </section>
+
+  <!-- ============ 07 CONTACT ============ -->
+  <section id="contact" class="section section-contact">
+    <div class="container">
+      <header class="section-head">
+        <span class="section-num">07</span>
+        <h2>contact</h2>
+        <span class="section-tag">échangeons</span>
+      </header>
+
+      <div class="contact-grid">
+        <p class="contact-big">un projet, une question,<br>une alternance&nbsp;?</p>
+        <div class="contact-card card">
+          <p class="label">e-mail</p>
+          <a class="contact-mail" href="mailto:tomdorleans07@gmail.com">tomdorleans07@gmail.com</a>
+          <button class="btn btn-dark btn-small" id="copy-mail" data-mail="tomdorleans07@gmail.com">copier l'adresse</button>
+          <p class="copy-feedback" id="copy-feedback" aria-live="polite"></p>
+          <!-- Ajoute tes liens ici :
+          <a class="btn btn-small" href="https://github.com/TON-PSEUDO" target="_blank" rel="noopener">github</a>
+          <a class="btn btn-small" href="https://www.linkedin.com/in/TON-PROFIL" target="_blank" rel="noopener">linkedin</a>
+          <a class="btn btn-small" href="docs/cv-tom-dorleans.pdf" download>télécharger mon cv</a> -->
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year">2026</span> Tom Dorleans — BTS SIO option SLAM</p>
+    <p class="mono">fait main · html / css / js natif · 0 framework</p>
+    <a href="#accueil" class="to-top">haut de page ↑</a>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
